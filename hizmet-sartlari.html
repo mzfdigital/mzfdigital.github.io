@@ -3,58 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmet Şartları - MZF Digital</title>
+    <title>Terms of Service - MZF Digital</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; margin-top: 25px; }
-        p { margin-bottom: 15px; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; padding: 20px; margin: 0; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .lang-selector { text-align: right; margin-bottom: 20px; }
+        select { padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; cursor: pointer; outline: none; background-color: #f8f9fa; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+        h1 { color: #2c3e50; font-size: 24px; border-bottom: 2px solid #eee; padding-bottom: 10px;}
+        h2 { color: #34495e; margin-top: 20px; font-size: 18px;}
         a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .rtl { direction: rtl; text-align: right; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Hizmet Şartları (Terms of Service)</h1>
-    <p><strong>Son Güncelleme:</strong> 7 Kasım 2026</p>
+    <div class="lang-selector">
+        <select id="langSwitch" onchange="changeLanguage()">
+            <option value="tr">🇹🇷 Türkçe</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="ar">🇸🇦 العربية</option>
+            <option value="ur">🇵🇰 اردو</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="id">🇮🇩 Bahasa Indonesia</option>
+        </select>
+    </div>
 
-    <p>Bu Hizmet Şartları, MZF Digital tarafından geliştirilen Zikirmatik & Namaz Vakitleri ("Uygulama") mobil uygulamasının kullanımını düzenler. Uygulamayı indirerek veya kullanarak bu şartları kabul etmiş sayılırsınız.</p>
+    <!-- 1. TÜRKÇE -->
+    <div id="tr" class="content-section active">
+        <h1>Hizmet Şartları</h1>
+        <p><strong>Son Güncelleme:</strong> 7 Kasım 2026</p>
+        <p>Bu şartlar, MZF Digital tarafından geliştirilen "Zikirmatik & Namaz Vakitleri" uygulamasını kullanımınızı düzenler.</p>
+        <h2>1. Kullanım ve Üçüncü Taraf Hizmetleri</h2>
+        <p>Uygulama ücretsizdir ve reklam göstermek için Google AdMob gibi üçüncü taraf hizmetleri kullanır. Bu hizmetlerin kendi gizlilik politikaları bulunur.</p>
+        <h2>2. Fikri Mülkiyet ve Sorumluluk</h2>
+        <p>Uygulamanın tasarımı ve kodları MZF Digital'e aittir. Uygulama "olduğu gibi" sunulur; namaz vakitleri veya verilerdeki olası anlık sapmalardan MZF Digital sorumlu tutulamaz.</p>
+        <h2>3. İletişim</h2>
+        <p>E-posta: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>1. Uygulama Kullanımı</h2>
-    <p>Uygulama, kişisel ve ticari olmayan kullanımınız için sunulmaktadır. Uygulamanın kaynak kodunu kopyalayamaz, değiştiremez, tersine mühendislik yapamaz veya yetkisiz erişim sağlamaya çalışamazsınız.</p>
+    <!-- 2. İNGİLİZCE -->
+    <div id="en" class="content-section">
+        <h1>Terms of Service</h1>
+        <p><strong>Last Updated:</strong> November 7, 2026</p>
+        <p>These terms govern your use of the "Zikirmatik & Namaz Vakitleri" application developed by MZF Digital.</p>
+        <h2>1. Usage and Third-Party Services</h2>
+        <p>The app is free and uses third-party services like Google AdMob for advertising. These services have their own privacy policies.</p>
+        <h2>2. Intellectual Property & Liability</h2>
+        <p>All design and code belong to MZF Digital. The app is provided "as is"; MZF Digital is not liable for any discrepancies in prayer times or data.</p>
+        <h2>3. Contact</h2>
+        <p>Email: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>2. Üçüncü Taraf Hizmetleri</h2>
-    <p>Uygulama, reklam göstermek veya belirli işlevleri yerine getirmek için üçüncü taraf hizmetleri (örneğin Google AdMob) kullanabilir. Bu hizmetlerin kendi gizlilik politikaları ve kullanım şartları bulunmaktadır. MZF Digital, üçüncü taraf içeriklerinden veya hizmetlerinden sorumlu tutulamaz.</p>
+    <!-- 3. ALMANCA -->
+    <div id="de" class="content-section">
+        <h1>Nutzungsbedingungen</h1>
+        <p><strong>Zuletzt aktualisiert:</strong> 7. November 2026</p>
+        <p>Diese Bedingungen regeln Ihre Nutzung der App "Zikirmatik & Namaz Vakitleri" von MZF Digital.</p>
+        <h2>1. Nutzung und Drittanbieter-Dienste</h2>
+        <p>Die App ist kostenlos und nutzt Dienste wie Google AdMob für Werbung, die eigene Datenschutzrichtlinien haben.</p>
+        <h2>2. Geistiges Eigentum & Haftung</h2>
+        <p>Design und Code gehören MZF Digital. Die App wird "wie besehen" bereitgestellt; MZF Digital haftet nicht für Abweichungen bei Gebetszeiten.</p>
+        <h2>3. Kontakt</h2>
+        <p>E-Mail: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>3. Fikri Mülkiyet</h2>
-    <p>Uygulamanın tüm telif hakları, ticari markaları, tasarımı ve kod yapısı MZF Digital'e aittir.</p>
+    <!-- 4. RUSÇA -->
+    <div id="ru" class="content-section">
+        <h1>Условия использования</h1>
+        <p><strong>Последнее обновление:</strong> 7 ноября 2026 г.</p>
+        <p>Эти условия регулируют использование вами приложения «Zikirmatik & Namaz Vakitleri», разработанного MZF Digital.</p>
+        <h2>1. Использование и сторонние сервисы</h2>
+        <p>Приложение бесплатно и использует сервисы (Google AdMob) для рекламы. У них есть свои политики конфиденциальности.</p>
+        <h2>2. Интеллектуальная собственность и ответственность</h2>
+        <p>Дизайн и код принадлежат MZF Digital. Приложение предоставляется «как есть»; мы не несем ответственности за неточности во времени молитв.</p>
+        <h2>3. Контакты</h2>
+        <p>Электронная почта: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>4. Sorumluluk Sınırı</h2>
-    <p>Uygulama "olduğu gibi" sunulmaktadır. Namaz vakitleri, bildirimler veya diğer verilerde oluşabilecek anlık hata veya gecikmelerden dolayı MZF Digital sorumlu tutulamaz. Uygulamanın kullanımından doğabilecek doğrudan veya dolaylı hiçbir zarardan MZF Digital sorumlu değildir.</p>
+    <!-- 5. ARAPÇA (RTL) -->
+    <div id="ar" class="content-section rtl">
+        <h1>شروط الخدمة</h1>
+        <p><strong>آخر تحديث:</strong> 7 نوفمبر 2026</p>
+        <p>تحكم هذه الشروط استخدامك لتطبيق "Zikirmatik & Namaz Vakitleri" الذي طورته MZF Digital.</p>
+        <h2>1. الاستخدام وخدمات الطرف الثالث</h2>
+        <p>التطبيق مجاني ويستخدم خدمات مثل Google AdMob للإعلانات. هذه الخدمات لها سياسات الخصوصية الخاصة بها.</p>
+        <h2>2. الملكية الفكرية والمسؤولية</h2>
+        <p>جميع التصاميم والأكواد ملك لـ MZF Digital. يُقدم التطبيق "كما هو"؛ ولا نتحمل أي مسؤولية عن أي تفاوت في أوقات الصلاة.</p>
+        <h2>3. اتصل بنا</h2>
+        <p>البريد الإلكتروني: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>5. Değişiklikler</h2>
-    <p>MZF Digital, bu Hizmet Şartları'nı önceden bildirmeksizin zaman zaman güncelleyebilir. Değişiklikler bu sayfada yayınlandığı andan itibaren geçerli sayılır.</p>
+    <!-- 6. URDUCA (RTL) -->
+    <div id="ur" class="content-section rtl">
+        <h1>سروس کی شرائط</h1>
+        <p><strong>آخری اپ ڈیٹ:</strong> 7 نومبر 2026</p>
+        <p>یہ شرائط MZF Digital کی تیار کردہ ایپ "Zikirmatik & Namaz Vakitleri" کے استعمال کو کنٹرول کرتی ہیں۔</p>
+        <h2>1. استعمال اور فریق ثالث کی خدمات</h2>
+        <p>ایپ مفت ہے اور اشتہارات کے لیے Google AdMob کا استعمال کرتی ہے۔ ان کی اپنی پرائیویسی پالیسیاں ہیں۔</p>
+        <h2>2. دانشورانہ املاک اور ذمہ داری</h2>
+        <p>تمام ڈیزائن اور کوڈ MZF Digital کی ملکیت ہیں۔ ہم نماز کے اوقات میں کسی بھی تضاد کے ذمہ دار نہیں ہیں۔</p>
+        <h2>3. رابطہ کریں</h2>
+        <p>ای میل: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 
-    <h2>6. İletişim</h2>
-    <p>Bu Hizmet Şartları ile ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:</p>
-    <p><strong>E-posta:</strong> <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    <!-- 7. FRANSIZCA -->
+    <div id="fr" class="content-section">
+        <h1>Conditions d'utilisation</h1>
+        <p><strong>Dernière mise à jour:</strong> 7 novembre 2026</p>
+        <p>Ces conditions régissent votre utilisation de l'application "Zikirmatik & Namaz Vakitleri" développée par MZF Digital.</p>
+        <h2>1. Utilisation et services tiers</h2>
+        <p>L'application est gratuite et utilise des services comme Google AdMob pour la publicité. Ces services ont leurs propres politiques de confidentialité.</p>
+        <h2>2. Propriété intellectuelle et responsabilité</h2>
+        <p>La conception et le code appartiennent à MZF Digital. L'application est fournie "telle quelle" ; nous déclinons toute responsabilité quant à l'exactitude des heures de prière.</p>
+        <h2>3. Contact</h2>
+        <p>Email: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
+
+    <!-- 8. ENDONEZCE -->
+    <div id="id" class="content-section">
+        <h1>Ketentuan Layanan</h1>
+        <p><strong>Terakhir Diperbarui:</strong> 7 November 2026</p>
+        <p>Ketentuan ini mengatur penggunaan Anda atas aplikasi "Zikirmatik & Namaz Vakitleri" yang dikembangkan oleh MZF Digital.</p>
+        <h2>1. Penggunaan dan Layanan Pihak Ketiga</h2>
+        <p>Aplikasi ini gratis dan menggunakan layanan seperti Google AdMob untuk iklan yang memiliki kebijakan privasinya sendiri.</p>
+        <h2>2. Kekayaan Intelektual & Tanggung Jawab</h2>
+        <p>Desain dan kode adalah milik MZF Digital. Aplikasi ini disediakan "sebagaimana adanya"; kami tidak bertanggung jawab atas ketidaksesuaian waktu shalat.</p>
+        <h2>3. Kontak</h2>
+        <p>Email: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </div>
 </div>
+
+<script>
+    function changeLanguage() {
+        var lang = document.getElementById("langSwitch").value;
+        var sections = document.querySelectorAll(".content-section");
+        sections.forEach(function(el) {
+            el.classList.remove("active");
+        });
+        document.getElementById(lang).classList.add("active");
+    }
+</script>
 
 </body>
 </html>
